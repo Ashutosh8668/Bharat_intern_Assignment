@@ -1,0 +1,207 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('images/background.jpg');   
+      background-size: cover;
+      background-position: center;
+  }
+  
+  /* Container styles */
+  .container {
+      position: relative;
+      width: 400px;
+      height: 555px;
+      background: rgba(255, 255, 255, .1);
+      backdrop-filter: blur(30px);
+      border: 2px solid rgba(255, 255, 255, .2);
+      border-radius: 16px;
+      padding: 20px;
+      color: #fff;
+      transition: height .6s ease;
+  }
+  
+  /* Search box styles */
+  .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 55px;
+  }
+  
+  .search-box i {
+      position: absolute;
+      left: 10px;
+      font-size: 28px;
+  }
+  
+  .search-box input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, .2);
+      outline: none;
+      border-radius: 10px;
+      font-size: 22px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 0 48px 0 42px;
+  }
+  
+  .search-box input::placeholder {
+      color: #fff;
+      text-transform: capitalize;
+  }
+  
+  .search-box button {
+      position: absolute;
+      right: 0;
+      width: 40px;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 28px;
+      color: #fff;
+      padding: 0 40px 0 5px;
+      cursor: pointer;
+  }
+  
+  /* Weather box styles */
+  .weather-box {
+      text-align: center;
+      margin: 40px 0;
+  }
+  
+  .weather-box img {
+      width: 60%;
+  }
+  
+  .weather-box .temperature {
+      position: relative;
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 700;
+      margin: 20px 0 6px -30px;
+  }
+  
+  .weather-box .temperature span {
+      position: absolute;
+      font-size: 24px;
+      margin-left: 4px;
+  }
+  
+  /* Weather details styles */
+  .weather-details {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      opacity: 0;
+      transition: opacity 1s ease;
+  }
+  
+  .weather-details.active {
+      opacity: 1;
+  }
+  
+  /* Details and error styles */
+  .weather-details .humidity,
+  .weather-details .wind {
+      display: flex;
+      align-items: center;
+      width: 50%;
+  }
+  
+  .weather-details i {
+      font-size: 56px;
+      margin-right: 10px;
+  }
+  
+  .weather-details .humidity {
+      padding-right: 20px;
+      justify-content: flex-start;
+  }
+  
+  .weather-details .wind {
+      padding-right: 20px;
+      justify-content: flex-end;
+  }
+  
+  .weather-details span {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 500;
+  }
+ 
+  .weather-details p {
+      font-size: 14px;
+      font-weight: 500;
+  }
+  
+  /* Not found styles */
+  .not-found {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 110px;
+      opacity: 0;
+      transition: opacity 1s ease;
+  }
+  
+  .not-found.active {
+      opacity: 1;
+  }
+  
+  .not-found img {
+      width: 65%;
+  }
+  
+  .not-found p {
+      font-size: 22px;
+      font-weight: 500;
+      margin-top: 12px;
+  }
+
+  .temperature.active p,
+  .description.active p{
+       visibility: visible;
+
+  }
+  .wallpaper {
+    position: relative;
+}
+.wallpaper {
+    position: relative;
+}
+
+.logo {
+    position: fixed;
+    top: 13px; /* Distance from the top */
+    left: 80px; /* Distance from the left */
+    width: 150px; /* Width of the logo */
+    height: 150px; /* Height to match the width and make it round */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: center; /* Centers the image within the frame */
+    z-index: 1000; /* Make sure it appears on top of other content */
+}
+
+
+  
